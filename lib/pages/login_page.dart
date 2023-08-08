@@ -32,7 +32,7 @@ class LoginPage extends StatelessWidget {
                 const SizedBox(height: 35),
 
                 Image.asset(
-                  'assets/skull.png', // Ganti dengan path gambar yang diinginkan
+                  'assets/icon.png', // Ganti dengan path gambar yang diinginkan
                   height: 100,
                   width: 340,
                 ),
