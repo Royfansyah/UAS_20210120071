@@ -7,17 +7,26 @@ class DashboardScreen extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          drawer: NavBar(),
-          appBar: AppBar(
-              title: Text(
-                'Welcome! 20210120071',
-                style: TextStyle(
-                    fontSize: 23,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500),
+        drawer: NavBar(),
+        appBar: AppBar(
+            actions: [
+              IconButton(
+                icon: Icon(Icons.logout),
+                onPressed: () {
+                  Navigator.pushReplacementNamed(
+                      context, 'login'); // kembali ke halaman login
+                },
               ),
-              backgroundColor: Color.fromARGB(255, 44, 43, 43)),
-          body: Container(
+            ],
+            title: Text(
+              'Welcome! 20210120071',
+              style: TextStyle(
+                  fontSize: 23,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500),
+            ),
+            backgroundColor: Color.fromARGB(255, 44, 43, 43)),
+        body: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(
@@ -25,46 +34,262 @@ class DashboardScreen extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            child: Center(
-              child: Text(
-                'Main Page',
-                style: TextStyle(fontSize: 30.0, color: Colors.white),
-              ),
-            ),
-          )),
+            child: ListView(
+              children: [
+                Container(
+                  padding: EdgeInsets.all(16.0),
+                  decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(20.0),
+                        bottomRight: Radius.circular(20.0),
+                      )),
+                  child: (Column(
+                    children: <Widget>[
+                      TextField(
+                        decoration: InputDecoration(
+                          hintText: "Search",
+                          fillColor: Colors.white,
+                          filled: true,
+                          suffixIcon: Icon(Icons.search),
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20.0),
+                            borderSide: BorderSide(color: Colors.transparent),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20.0),
+                            borderSide: BorderSide(color: Colors.transparent),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(16.0),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Text(
+                              'News',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20.0,
+                                  color: Colors.white),
+                            ),
+                            Text(
+                              'View More',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15.0,
+                                  color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(16.0),
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              width: 100.0,
+                              height: 100.0,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage('assets/icon.png'),
+                                  fit: BoxFit.cover,
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                            ),
+                            SizedBox(width: 20.0),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  'March 29, 2023',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Text(
+                                  'All Odds Update is Available!',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 15.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(height: 25.0),
+                                Text(
+                                  'Read More..',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 15.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(16.0),
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              width: 100.0,
+                              height: 100.0,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage('assets/icon.png'),
+                                  fit: BoxFit.cover,
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                            ),
+                            SizedBox(width: 20.0),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  'February 20, 2023',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Text(
+                                  'Patch Notes!',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 15.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(height: 25.0),
+                                Text(
+                                  'Read More..',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 15.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(16.0),
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              width: 100.0,
+                              height: 100.0,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage('assets/icon.png'),
+                                  fit: BoxFit.cover,
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                            ),
+                            SizedBox(width: 20.0),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  'January 31, 2023',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Text(
+                                  'January 31 2023 Hotfix!',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 15.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(height: 25.0),
+                                Text(
+                                  'Read More..',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 15.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(16.0),
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              width: 100.0,
+                              height: 100.0,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage('assets/icon.png'),
+                                  fit: BoxFit.cover,
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                            ),
+                            SizedBox(width: 20.0),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  'April 4th Patch Notes',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Text(
+                                  'April 4th Patch Notes!',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 15.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(height: 25.0),
+                                Text(
+                                  'Read More..',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 15.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
+                  )),
+                )
+              ],
+            )),
+      ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import 'package:flutter/material.dart';
 

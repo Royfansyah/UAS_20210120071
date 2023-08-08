@@ -10,7 +10,7 @@ class MyButton extends StatelessWidget {
       margin: const EdgeInsets.only(top: 10.0, left: 90, right: 90),
       child: ElevatedButton(
         onPressed: () {
-          Navigator.pushReplacementNamed(context, 'dashboard');
+          Navigator.pushReplacementNamed(context, 'dashboard'); // Login dan masuk ke halaman dashboard
         },
         style: ElevatedButton.styleFrom(
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),

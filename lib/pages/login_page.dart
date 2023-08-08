@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:uas_roy/component/Google.dart';
 import 'package:uas_roy/component/TextField.dart';
 import 'package:uas_roy/component/Button.dart';
+import 'package:uas_roy/component/navbar.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:uas_roy/pages/dashboard.dart';
 
@@ -11,9 +12,6 @@ class LoginPage extends StatelessWidget {
   // Text Edit Controller
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
-
-  // Sign In Method
-  void signUserIn() {}
 
   @override
   Widget build(BuildContext context) {
