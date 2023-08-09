@@ -31,7 +31,7 @@ class Gallery extends StatelessWidget {
           gridDelegate: const SliverSimpleGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2),
           itemBuilder: (context, index) => Padding(
-            padding: const EdgeInsets.all(1.0),
+            padding: const EdgeInsets.all(3.5),
             child: ClipRRect(
                 borderRadius: BorderRadius.circular(7),
                 child: Image.asset('assets/Gallery/${index + 1}.jpg')),

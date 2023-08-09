@@ -144,6 +144,45 @@ class NavBar extends StatelessWidget {
             ),
             onTap: () {},
           ),
+          const SizedBox(
+            height: 200,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10.0),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Divider(
+                    thickness: 1.5,
+                    color: Color.fromARGB(255, 71, 71, 71),
+                  ),
+                ),
+                Expanded(
+                  child: Divider(
+                    thickness: 1.5,
+                    color: Color.fromARGB(255, 71, 71, 71),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          // Close Drawer Button
+          ListTile(
+            leading: Icon(
+              Icons.close,
+              color: Colors.white,
+            ),
+            title: Text(
+              'Close',
+              style: TextStyle(
+                fontSize: 17,
+                color: Colors.white,
+              ),
+            ),
+            onTap: () {
+              Navigator.pop(context); // Close the drawer
+            },
+          ),
         ],
       ),
     );

@@ -39,6 +39,78 @@ class _ProfilePageState extends State<ProfilePage> {
           children: <Widget>[
             buildTop(),
             buildContent(),
+            ListTile(
+              contentPadding: EdgeInsets.symmetric(
+                  horizontal: 70.0), // Adjust horizontal padding
+              title: Container(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.black, // Warna garis
+                    width: 1.5, // Lebar garis
+                  ),
+                  color: Colors.grey[850],
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                padding: EdgeInsets.all(10), // Set container padding
+                child: Text(
+                  'Change Password',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                  textAlign: TextAlign.center, // Set text alignment to center
+                ),
+              ),
+              onTap: () {},
+            ),
+            ListTile(
+              contentPadding: EdgeInsets.symmetric(
+                  horizontal: 70.0), // Adjust horizontal padding
+              title: Container(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.black, // Warna garis
+                    width: 1.5, // Lebar garis
+                  ),
+                  color: Colors.grey[850],
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                padding: EdgeInsets.all(10), // Set container padding
+                child: Text(
+                  'Change Email',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                  textAlign: TextAlign.center, // Set text alignment to center
+                ),
+              ),
+              onTap: () {},
+            ),
+            ListTile(
+              contentPadding: EdgeInsets.symmetric(
+                  horizontal: 70.0), // Adjust horizontal padding
+              title: Container(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.black, // Warna garis
+                    width: 1.5, // Lebar garis
+                  ),
+                  color: Colors.grey[850],
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                padding: EdgeInsets.all(10), // Set container padding
+                child: Text(
+                  'Delete Account',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                  textAlign: TextAlign.center, // Set text alignment to center
+                ),
+              ),
+              onTap: () {},
+            ),
           ],
         ),
       ),

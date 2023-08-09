@@ -41,15 +41,14 @@ class LoginPage extends StatelessWidget {
                   'LOGIN!',
                   style: GoogleFonts.oswald(
                     textStyle: Theme.of(context).textTheme.displayLarge,
-                    fontSize: 30,
+                    fontSize: 27,
                     fontWeight: FontWeight.w500,
-                    fontStyle: FontStyle.italic,
                     color: Colors.grey[200],
                   ),
                   textAlign: TextAlign.center,
                 ),
 
-                const SizedBox(height: 10),
+                const SizedBox(height: 8),
 
                 // Username
                 MyTextField(

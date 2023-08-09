@@ -304,6 +304,114 @@ class DashboardScreen extends StatelessWidget {
                           ],
                         ),
                       ),
+                      Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              width: 110.0,
+                              height: 110.0,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.black, // Warna garis
+                                  width: 1.5, // Lebar garis
+                                ),
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                      'assets/update.png'), // Hanya Foto Sampel
+                                  fit: BoxFit.cover,
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                            ),
+                            SizedBox(width: 20.0),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  'Dec 7th Patch Notes',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Text(
+                                  'Dec 7 Patch is Now Live!',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 15.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(height: 25.0),
+                                Text(
+                                  'Read More..',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 15.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              width: 110.0,
+                              height: 110.0,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.black, // Warna garis
+                                  width: 1.5, // Lebar garis
+                                ),
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                      'assets/update.png'), // Hanya Foto Sampel
+                                  fit: BoxFit.cover,
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                            ),
+                            SizedBox(width: 20.0),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  'October 18,2023',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Text(
+                                  'October 18 Patch is Now Live!',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 15.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(height: 25.0),
+                                Text(
+                                  'Read More..',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 15.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
                     ],
                   )),
                 )
