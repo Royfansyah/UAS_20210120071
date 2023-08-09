@@ -25,7 +25,7 @@ class DashboardScreen extends StatelessWidget {
                   color: Colors.white,
                   fontWeight: FontWeight.w500),
             ),
-            backgroundColor: Color.fromARGB(255, 44, 43, 43)),
+            backgroundColor: Colors.grey[900]),
         body: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
@@ -54,7 +54,10 @@ class DashboardScreen extends StatelessWidget {
                           suffixIcon: Icon(Icons.search),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20.0),
-                            borderSide: BorderSide(color: Colors.transparent),
+                            borderSide: BorderSide(
+                              color: Colors.black,
+                              width: 2.0,
+                            ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20.0),
@@ -63,13 +66,13 @@ class DashboardScreen extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: EdgeInsets.all(15.0),
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
                             Text(
-                              'News',
+                              'New Update:',
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20.0,
@@ -86,15 +89,20 @@ class DashboardScreen extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: EdgeInsets.all(10.0),
                         child: Row(
                           children: <Widget>[
                             Container(
-                              width: 100.0,
-                              height: 100.0,
+                              width: 110.0,
+                              height: 110.0,
                               decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.black, // Warna garis
+                                  width: 1.5, // Lebar garis
+                                ),
                                 image: DecorationImage(
-                                  image: AssetImage('assets/icon.png'),
+                                  image: AssetImage(
+                                      'assets/update.png'), // Hanya Foto Sampel
                                   fit: BoxFit.cover,
                                 ),
                                 borderRadius: BorderRadius.circular(10.0),
@@ -135,15 +143,20 @@ class DashboardScreen extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: EdgeInsets.all(10.0),
                         child: Row(
                           children: <Widget>[
                             Container(
-                              width: 100.0,
-                              height: 100.0,
+                              width: 110.0,
+                              height: 110.0,
                               decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.black, // Warna garis
+                                  width: 1.5, // Lebar garis
+                                ),
                                 image: DecorationImage(
-                                  image: AssetImage('assets/icon.png'),
+                                  image: AssetImage(
+                                      'assets/update.png'), // Hanya Foto Sampel
                                   fit: BoxFit.cover,
                                 ),
                                 borderRadius: BorderRadius.circular(10.0),
@@ -184,15 +197,20 @@ class DashboardScreen extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: EdgeInsets.all(10.0),
                         child: Row(
                           children: <Widget>[
                             Container(
-                              width: 100.0,
-                              height: 100.0,
+                              width: 110.0,
+                              height: 110.0,
                               decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.black, // Warna garis
+                                  width: 1.5, // Lebar garis
+                                ),
                                 image: DecorationImage(
-                                  image: AssetImage('assets/icon.png'),
+                                  image: AssetImage(
+                                      'assets/update.png'), // Hanya Foto Sampel
                                   fit: BoxFit.cover,
                                 ),
                                 borderRadius: BorderRadius.circular(10.0),
@@ -233,15 +251,20 @@ class DashboardScreen extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: EdgeInsets.all(10.0),
                         child: Row(
                           children: <Widget>[
                             Container(
-                              width: 100.0,
-                              height: 100.0,
+                              width: 110.0,
+                              height: 110.0,
                               decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.black, // Warna garis
+                                  width: 1.5, // Lebar garis
+                                ),
                                 image: DecorationImage(
-                                  image: AssetImage('assets/icon.png'),
+                                  image: AssetImage(
+                                      'assets/update.png'), // Hanya Foto Sampel
                                   fit: BoxFit.cover,
                                 ),
                                 borderRadius: BorderRadius.circular(10.0),
@@ -290,6 +313,20 @@ class DashboardScreen extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// BASIC PAGE
+
 
 // import 'package:flutter/material.dart';
 

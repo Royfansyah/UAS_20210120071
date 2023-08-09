@@ -30,26 +30,26 @@ class LoginPage extends StatelessWidget {
                 const SizedBox(height: 35),
 
                 Image.asset(
-                  'assets/icon.png', // Ganti dengan path gambar yang diinginkan
-                  height: 100,
+                  'assets/logo.png', // Ganti dengan path gambar yang diinginkan
+                  height: 150,
                   width: 340,
                 ),
 
-                const SizedBox(height: 5),
+                const SizedBox(height: 20),
 
                 Text(
                   'LOGIN!',
-                  style: GoogleFonts.permanentMarker(
+                  style: GoogleFonts.oswald(
                     textStyle: Theme.of(context).textTheme.displayLarge,
-                    fontSize: 48,
-                    fontWeight: FontWeight.w700,
+                    fontSize: 30,
+                    fontWeight: FontWeight.w500,
                     fontStyle: FontStyle.italic,
-                    color: Color.fromARGB(255, 226, 226, 226),
+                    color: Colors.grey[200],
                   ),
                   textAlign: TextAlign.center,
                 ),
 
-                const SizedBox(height: 20),
+                const SizedBox(height: 10),
 
                 // Username
                 MyTextField(

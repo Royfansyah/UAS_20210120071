@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:uas_roy/pages/gallery.dart';
+import 'package:uas_roy/pages/profile_page.dart';
 import 'pages/login_page.dart';
 import 'package:uas_roy/pages/dashboard.dart';
 
@@ -17,6 +19,8 @@ class MyApp extends StatelessWidget {
       routes: {
         'login': (context) => LoginPage(),
         'dashboard': (context) => DashboardScreen(),
+        'profile': (context) => ProfilePage(),
+        'galerry': (context) => Gallery(),
       },
     );
   }
